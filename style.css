@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+*{
+    user-select: none;
+}
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Alkatra', cursive;
+    background-color: #222831;
+   
+    background-image: url("./assets/riverForest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    backdrop-filter: blur(5px);
+}
+
+
+.time-section{
+    text-align: center;
+    
+    
+}
+.greeting{
+   
+    font-size: 30px;
+   
+    animation: greet .5s alternate-reverse infinite;
+}
+.time-and-date p{
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    /* background-color: #393E46; */
+    font-size: 50px;
+    padding: 0 2%;
+    border-radius: 5px;
+    margin: 30px 0;
+    
+}
+
+.search-section{
+    text-align: center;
+    margin: 3px 0;
+}
+.search-section input{
+   
+    /* border: 2px solid #00ADB5; */
+    border: none;
+    caret-color:white;
+    font-size: 30px;
+    width: 48%;
+    height: 50px;
+    /* background-color: #393E46; */
+    background: rgba(255, 255, 255, 0.2);
+
+    color:white;
+    border-radius: 5px;
+   
+}
+.search-section input:focus{
+    border: none;
+    outline: none;
+   
+}
+
+.search-section button{
+    color: white;
+    font-size: 30px;
+    width: 8%;
+    height: 53px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+}
+.search-section button:active{
+    
+    color: black;
+}
+.bookmark-section{
+    text-align: center;
+    margin-top: 100px;
+}
+.bookmark-section .bookmark{
+    display: inline-block;
+   background: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 10px 30px 0 30px;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+.bookmark-section .bookmark:hover{
+   
+    transition: .5s;
+    transform: translateY(-5px);
+}
+.bookmark-section .bookmark{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+.bookmark-section .bookmark img{
+    width: 40px;
+    filter: contrast(2);
+}
+@keyframes greet {
+    from{
+        opacity: 20%;
+        
+      
+    }
+    to{
+        opacity:100% ;
+        
+    }
+}
+@media (width<534px) {
+    .time-and-date p:nth-child(2){
+        font-size: 30px;
+    }
+    .search-section{
+        margin: 0;
+    }
+    .search-section input{
+        width: 250px;
+    }
+    .search-section button{
+        width:50px
+    }
+    .bookmark-section .bookmark p{
+        display: none;
+    }
+    .bookmark-section .bookmark{
+        padding: 10px 15px;
+    }
+   
+}
